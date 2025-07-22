@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../assets/css/output.css">
   <script src="../assets/js/script.js" defer></script>
 
-  <title>Document</title>
+  <title>Nature's Jam - Home</title>
 </head>
 
 <body>
@@ -49,17 +49,56 @@
 
   <section class="story-section py-12 flex flex-col items-center justify-center gap-6">
     <div class="video-wrapper w-full max-w-4xl aspect-video">
-      <iframe
-        class="w-full h-full rounded shadow-lg"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        title="Our Story"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <iframe class="w-full h-full rounded shadow-lg" src="https://www.youtube.com/embed/VIDEO_ID" title="Our Story"
+        frameborder="0" allowfullscreen></iframe>
     </div>
     <h2 class="font-rock-salt text-3xl text-center text-text">OUR STORY</h2>
   </section>
 
+  <section class="why-best-section py-12 flex flex-col items-center gap-8 bg-bg text-text">
+    <h2 class="font-rock-salt text-3xl text-center">WHY WE'RE THE BEST</h2>
+
+    <div class="reasons-container grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl px-4">
+      <div class="reason-item flex flex-col items-center text-center">
+        <img src="../assets/images/reason1.png" alt="Fresh Ingredients"
+          class="w-48 h-48 object-cover rounded shadow-md mb-4" />
+        <p class="text-lg">Made with only the freshest fruits</p>
+      </div>
+      <div class="reason-item flex flex-col items-center text-center">
+        <img src="../assets/images/reason2.png" alt="Handcrafted"
+          class="w-48 h-48 object-cover rounded shadow-md mb-4" />
+        <p class="text-lg">Lovingly handcrafted in small batches</p>
+      </div>
+      <div class="reason-item flex flex-col items-center text-center">
+        <img src="../assets/images/reason3.png" alt="No Preservatives"
+          class="w-48 h-48 object-cover rounded shadow-md mb-4" />
+        <p class="text-lg">No added preservatives or artificial stuff</p>
+      </div>
+    </div>
+
+    <button class="btn-primary">Learn More</button>
+  </section>
+
+  <section class="spread-ideas-section py-12 flex flex-col items-center gap-8 bg-bg text-text">
+    <div class="w-full bg-accent py-4">
+      <h2 class="text-center text-white font-rock-salt text-3xl">It does more than spread</h2>
+    </div>
+
+    <p class="max-w-2xl text-center px-4 text-lg">
+      How about putting Nature Jars’ Organic Morello Cherry Spread in your cookie batter? Yes. That is what we just
+      said.
+      Did we mention there’s more?
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl px-6">
+      <a href="/recipes/cookie-spread" class="block">
+        <img src="../assets/images/recipes/cookie.png" alt="Cookie Spread Recipe" class="w-full rounded-xl shadow-md" />
+      </a>
+      <a href="/recipes/oatmeal-bars" class="block">
+        <img src="../assets/images/recipes/oatmeal.png" alt="Oatmeal Bars Recipe" class="w-full rounded-xl shadow-md" />
+      </a>
+    </div>
+  </section>
 
 </body>
 
