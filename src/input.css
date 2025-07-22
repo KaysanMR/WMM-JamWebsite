@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-amatic: 'Amatic SC', cursive;
+}
+
+@layer base {
+  body {
+    @apply 
+    flex 
+    flex-col 
+    justify-center 
+    items-center 
+
+    bg-gray-100 
+    text-gray-900;
+  }
+
+  h1 {
+    @apply font-amatic text-3xl font-bold;
+  }
+
+}
