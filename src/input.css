@@ -8,7 +8,8 @@
 
   --color-bg: #FBF5DE;
   --color-header: #bae0ed; 
-  --color-text: #431407; 
+  --color-text: #431407;
+  --color-text-light: #FBF5DE; 
   --color-accent: #9c1c19; 
   --color-accent-hover: #e82925;
   --color-btn-bg: #9c1c19;
@@ -34,7 +35,7 @@ base {
   }
 
   .hero-section {
-    @apply font-patrick w-full bg-bg py-12;
+    @apply font-patrick text-text-light w-full bg-bg py-12;
   }
 
   .hero-container {
@@ -42,11 +43,11 @@ base {
   }
 
   .hero-heading {
-    @apply text-4xl font-rock-salt text-text mb-4;
+    @apply text-4xl font-rock-salt mb-4;
   }
 
   .hero-text {
-    @apply text-lg text-text mb-6;
+    @apply text-lg mb-6;
   }
 
   .image-placeholder {
@@ -56,7 +57,7 @@ base {
 
   
   .jam-carousel-section {
-    @apply bg-header py-12;
+    @apply bg-bg py-12;
   }
 
   .carousel-container {
