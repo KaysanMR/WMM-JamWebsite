@@ -19,7 +19,7 @@
 base {
 
   body {
-    @apply flex flex-col justify-center items-center bg-bg text-amber-950;
+    @apply font-patrick flex flex-col justify-center items-center bg-bg text-amber-950 h-screen overflow-hidden;
   }
 
 }
@@ -27,7 +27,7 @@ base {
 @layer components {
 
   .nav-link {
-    @apply text-text hover:text-accent-hover;
+    @apply text-text hover:text-accent-hover transition duration-200;
   }
 
   .btn-primary {
@@ -56,15 +56,40 @@ base {
 
 
   
-  .jam-carousel-section {
-    @apply bg-bg py-12;
+  /* Universal section styling */
+  .flavor-section {
+    @apply py-12 bg-bg text-text;
   }
 
-  .carousel-container {
-    @apply flex gap-6 overflow-x-auto scroll-smooth px-6;
+  /* Carousel container */
+  .flavor-carousel {
+    @apply flex justify-around px-4 md:px-12;
+    scroll-snap-type: x mandatory;
   }
 
-  .jam-card {
-    @apply min-w-[250px] bg-bg border border-accent rounded-lg shadow p-4 flex-shrink-0;
+  /* Each jam flavor */
+  .flavor-item {
+    @apply flex flex-col items-center shrink-0;
+    scroll-snap-align: center;
   }
+
+  /* Jam image */
+  .flavor-image {
+    @apply w-60 h-60 md:w-70 md:h-70 object-contain hover:scale-110 transition-transform duration-150 ease-in-out ;
+  }
+
+  /* Jam name */
+  .flavor-label {
+    @apply mt-2 font-patrick text-lg md:text-xl text-text;
+  }
+
+
+  .story-section {
+    @apply py-12 bg-header text-text;
+    
+  }
+  .video-wrapper {
+    @apply rounded-3xl overflow-hidden;
+  }
+
 }

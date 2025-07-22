@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <section class="hero-section relative overflow-hidden">
+  <section class="h-100 flex hero-section relative overflow-hidden">
     <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
       <source src="../assets/video/bg-video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -21,36 +21,45 @@
       <div>
         <h1 class="hero-heading">Pure, Farm-Fresh Goodness</h1>
         <p class="hero-text">Taste the difference in every jar of Nature’s Jam.</p>
-        <a href="#products" class="btn-primary">Explore Our Flavours</a>
+        <a href="#products" class="btn-primary">Stores Near You!</a>
       </div>
     </div>
   </section>
 
   <section class="flavor-section">
-    <h2 class="text-center">OUR FLAVORS</h2>
-    <div class="flavor-carousel">
+    <h2 class="font-rock-salt text-center">OUR FLAVORS</h2>
+    <div class="mt-12 flavor-carousel">
       <div class="flavor-item">
-        <img src="/images/jams/strawberry.png" alt="Strawberry Bliss" class="flavor-image" />
-        <p class="flavor-label">Strawberry Bliss</p>
+        <img src="../assets/images/jams/strawberry.png" alt="Strawberry Bliss" class="flavor-image" />
       </div>
       <div class="flavor-item">
-        <img src="/images/jams/mango.png" alt="Mango Madness" class="flavor-image" />
-        <p class="flavor-label">Mango Madness</p>
+        <img src="../assets/images/jams/mango.png" alt="Mango Madness" class="flavor-image" />
       </div>
       <div class="flavor-item">
-        <img src="/images/jams/blueberry.png" alt="Blueberry Burst" class="flavor-image" />
-        <p class="flavor-label">Blueberry Burst</p>
+        <img src="../assets/images/jams/blueberry.png" alt="Blueberry Burst" class="flavor-image" />
       </div>
       <div class="flavor-item">
-        <img src="/images/jams/raspberry.png" alt="Raspberry Rush" class="flavor-image" />
-        <p class="flavor-label">Raspberry Rush</p>
+        <img src="../assets/images/jams/raspberry.png" alt="Raspberry Rush" class="flavor-image" />
       </div>
       <div class="flavor-item">
-        <img src="/images/jams/marmalade.png" alt="Sunny Marmalade" class="flavor-image" />
-        <p class="flavor-label">Sunny Marmalade</p>
+        <img src="../assets/images/jams/marmalade.png" alt="Sunny Marmalade" class="flavor-image" />
       </div>
     </div>
   </section>
+
+  <section class="story-section py-12 flex flex-col items-center justify-center gap-6">
+    <div class="video-wrapper w-full max-w-4xl aspect-video">
+      <iframe
+        class="w-full h-full rounded shadow-lg"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Our Story"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <h2 class="font-rock-salt text-3xl text-center text-text">OUR STORY</h2>
+  </section>
+
 
 </body>
 
