@@ -1,32 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&family=Rock+Salt&display=swap');
 @import "tailwindcss";
 
 
 @theme {
-  --font-amatic: 'Amatic SC', cursive;
   --font-rock-salt: 'Rock Salt', cursive;
+  --font-patrick: 'Patrick Hand', cursive;
+
+  --color-bg: #FBF5DE;
+  --color-header: #bae0ed; 
+  --color-text: #431407; 
+  --color-accent: #9c1c19; 
+  --color-accent-hover: #e82925;
+  --color-btn-bg: #9c1c19;
+
 }
 
 base {
+
   body {
-    @apply flex flex-col justify-center items-center bg-orange-100 text-amber-950;
+    @apply flex flex-col justify-center items-center bg-bg text-amber-950;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-amatic text-3xl;
-  }
 }
 
 @layer components {
+
   .nav-link {
-    @apply text-amber-950 hover:text-orange-500;
+    @apply text-text hover:text-accent-hover;
   }
-    .btn-primary {
-    @apply inline-block bg-amber-700 text-white px-6 py-2 rounded hover:bg-amber-800 transition;
+
+  .btn-primary {
+    @apply inline-block bg-btn-bg text-white px-6 py-2 rounded hover:bg-accent-hover transition;
   }
 
   .hero-section {
-    @apply w-full bg-orange-100 py-12;
+    @apply font-patrick w-full bg-bg py-12;
   }
 
   .hero-container {
@@ -34,14 +42,28 @@ base {
   }
 
   .hero-heading {
-    @apply text-4xl font-amatic text-amber-950 mb-4;
+    @apply text-4xl font-rock-salt text-text mb-4;
   }
 
   .hero-text {
-    @apply text-lg text-amber-900 mb-6;
+    @apply text-lg text-text mb-6;
   }
 
   .image-placeholder {
-    @apply w-full h-64 bg-amber-300 rounded shadow-inner flex items-center justify-center text-amber-800 text-xl italic;
+    @apply m-12 w-full h-64 bg-bg text-text rounded border-2 border-accent flex items-center justify-center text-xl italic;
+  }
+
+
+  
+  .jam-carousel-section {
+    @apply bg-header py-12;
+  }
+
+  .carousel-container {
+    @apply flex gap-6 overflow-x-auto scroll-smooth px-6;
+  }
+
+  .jam-card {
+    @apply min-w-[250px] bg-bg border border-accent rounded-lg shadow p-4 flex-shrink-0;
   }
 }
