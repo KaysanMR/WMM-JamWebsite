@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 
 @theme {
-  --font-rock-salt: 'Rock Salt', cursive;
+  --font-sourgummy: 'Sour Gummy', sans-serif;
   --font-patrick: 'Patrick Hand', cursive;
 
   --color-bg: #FBF5DE;
@@ -43,7 +43,7 @@ base {
   }
 
   .hero-heading {
-    @apply text-4xl font-rock-salt mb-4;
+    @apply text-4xl font-sourgummy mb-4;
   }
 
   .hero-text {
@@ -76,11 +76,6 @@ base {
   /* Jam image */
   .flavor-image {
     @apply w-60 h-60 md:w-70 md:h-70 object-contain hover:scale-110 transition-transform duration-150 ease-in-out ;
-  }
-
-  /* Jam name */
-  .flavor-label {
-    @apply mt-2 font-patrick text-lg md:text-xl text-text;
   }
 
 
