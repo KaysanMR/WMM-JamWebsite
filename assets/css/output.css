@@ -51,7 +51,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-sourgummy: 'Sour Gummy', sans-serif;
     --font-patrick: 'Patrick Hand', cursive;
-    --color-bg: #FBF5DE;
+    --color-lightyellow: #FBF5DE;
     --color-header: #bae0ed;
     --color-text: #431407;
     --color-text-light: #FBF5DE;
@@ -245,9 +245,6 @@
   }
   .z-50 {
     z-index: 50;
-  }
-  .mx-20 {
-    margin-inline: calc(var(--spacing) * 20);
   }
   .mx-auto {
     margin-inline: auto;
@@ -455,14 +452,25 @@
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
+<<<<<<< HEAD
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+=======
   .bg-bg {
     background-color: var(--color-bg);
+>>>>>>> 1a19699f759063e03b8be702f4a4b26a70b48fcd
   }
   .bg-faqred {
     background-color: var(--color-faqred);
   }
   .bg-header {
     background-color: var(--color-header);
+  }
+  .bg-lightyellow {
+    background-color: var(--color-lightyellow);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -681,18 +689,17 @@
     }
   }
 }
-base {
+@layer base {
   body {
-    background-color: var(--color-bg);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: var(--color-bg);
+    background-color: var(--color-lightyellow);
     font-family: var(--font-patrick);
-    color: var(--color-amber-950);
+    color: var(--color-text);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sourgummy);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
   }
 }
 @layer components {
@@ -729,7 +736,7 @@ base {
   }
   .hero-section {
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--color-lightyellow);
     padding-block: calc(var(--spacing) * 12);
     font-family: var(--font-patrick);
     color: var(--color-text-light);
@@ -769,7 +776,7 @@ base {
     border-style: var(--tw-border-style);
     border-width: 2px;
     border-color: var(--color-accent);
-    background-color: var(--color-bg);
+    background-color: var(--color-lightyellow);
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
     color: var(--color-text);
@@ -780,14 +787,14 @@ base {
     flex-direction: column;
     align-items: center;
     border-radius: var(--radius-lg);
-    background-color: var(--color-bg);
+    background-color: var(--color-lightyellow);
     padding: calc(var(--spacing) * 6);
     color: var(--color-text);
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .flavor-section {
-    background-color: var(--color-bg);
+    background-color: var(--color-lightyellow);
     padding-block: calc(var(--spacing) * 12);
     color: var(--color-text);
   }

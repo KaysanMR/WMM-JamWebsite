@@ -6,7 +6,7 @@
   --font-sourgummy: 'Sour Gummy', sans-serif;
   --font-patrick: 'Patrick Hand', cursive;
 
-  --color-bg: #FBF5DE;
+  --color-lightyellow: #FBF5DE;
   --color-header: #bae0ed; 
   --color-text: #431407;
   --color-text-light: #FBF5DE; 
@@ -17,11 +17,13 @@
 
 }
 
-base {
-
+@layer base {
   body {
-    background-color: var(--color-bg);
-    @apply font-patrick flex flex-col justify-center items-center bg-bg text-amber-950 h-screen overflow-hidden;
+    @apply bg-lightyellow text-text font-patrick;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sourgummy text-text font-bold;
   }
 
 }
@@ -37,7 +39,7 @@ base {
   }
 
   .hero-section {
-    @apply font-patrick text-text-light w-full bg-bg py-12;
+    @apply font-patrick text-text-light w-full bg-lightyellow py-12;
   }
 
   .hero-container {
@@ -53,18 +55,18 @@ base {
   }
 
   .image-placeholder {
-    @apply m-12 w-full h-64 bg-bg text-text rounded border-2 border-accent flex items-center justify-center text-xl italic;
+    @apply m-12 w-full h-64 bg-lightyellow text-text rounded border-2 border-accent flex items-center justify-center text-xl italic;
   }
 
   .card {
-    @apply bg-bg text-text rounded-lg shadow-lg p-6 flex flex-col items-center;
+    @apply bg-lightyellow text-text rounded-lg shadow-lg p-6 flex flex-col items-center;
   }
 
 
   
   /* Universal section styling */
   .flavor-section {
-    @apply py-12 bg-bg text-text;
+    @apply py-12 bg-lightyellow text-text;
   }
 
   /* Carousel container */
@@ -86,7 +88,7 @@ base {
 
 
   .story-section {
-    @apply py-12 bg-header text-text;
+    @apply py-12 bg-lightblue text-text;
     
   }
   .video-wrapper {
