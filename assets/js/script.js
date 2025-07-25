@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Failed to load footer:", err);
   }
 });
+  
