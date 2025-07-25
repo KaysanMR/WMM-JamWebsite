@@ -19,6 +19,7 @@
 base {
 
   body {
+    background-color: var(--color-bg);
     @apply font-patrick flex flex-col justify-center items-center bg-bg text-amber-950 h-screen overflow-hidden;
   }
 
@@ -31,7 +32,7 @@ base {
   }
 
   .btn-primary {
-    @apply inline-block bg-btn-bg text-white px-6 py-2 rounded hover:bg-accent-hover transition;
+    @apply inline-block bg-btn-bg text-white px-6 py-2 rounded hover:bg-accent-hover transition duration-20;
   }
 
   .hero-section {
