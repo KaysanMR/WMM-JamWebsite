@@ -32,7 +32,7 @@ base {
   }
 
   .btn-primary {
-    @apply inline-block bg-btn-bg text-white px-6 py-2 rounded hover:bg-accent-hover transition duration-20;
+    @apply inline-block bg-btn-bg text-white px-6 py-2 rounded hover:bg-accent-hover transition duration-200;
   }
 
   .hero-section {
@@ -53,6 +53,10 @@ base {
 
   .image-placeholder {
     @apply m-12 w-full h-64 bg-bg text-text rounded border-2 border-accent flex items-center justify-center text-xl italic;
+  }
+
+  .card {
+    @apply bg-bg text-text rounded-lg shadow-lg p-6 flex flex-col items-center;
   }
 
 
