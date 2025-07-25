@@ -1,13 +1,62 @@
-<header class="w-full bg-header p-8 shadow-md">
-  <nav class="sticky top-0 max-w-screen-xl mx-auto flex justify-between items-center">
-    <a href="#" class="font-sourgummy font-bold text-amber-950 text-lg flex items-center space-x-2">
-      <img src="../assets/images/naturesJamLogo.jpg" alt="Logo" class="w-16 h-16 object-contain" />
+<header class="sticky top-0 z-50 w-full bg-header p-4 shadow-md">
+  <nav class="max-w-screen-xl mx-auto flex justify-between items-center">
+    <a href="./index.html" class="font-sourgummy font-bold text-amber-950 text-lg flex items-center space-x-2">
+      <img src="../assets/images/naturesJamLogo.png" alt="Logo" class="w-20 object-contain" />
+      <h1 class="text-2xl">Nature's Jam</h1>
     </a>
-    <ul class="flex space-x-6 text-2xl font-patrick text-text">
-      <li><a href="./index.html" class="nav-link">Home</a></li>
-      <li><a href="./about-us.html" class="nav-link">About</a></li>
-      <li><a href="#" class="nav-link">Products</a></li>
-      <li><a href="./contact-us.html" class="nav-link">Contact</a></li>
+
+    <ul class="flex gap-x-12 text-xl font-patrick text-text relative">
+      <!-- Nav Item Template -->
+      <li class="relative group">
+        <a href="#" class="nav-link flex items-center px-3 py-2 hover:bg-amber-100 rounded-md">About</a>
+        <div
+          class="absolute top-full left-0 mt-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-40">
+          <ul class="min-w-[200px] py-2">
+            <li><a href="./our-story.html" class="block px-4 py-2 hover:bg-gray-100">Our Story</a></li>
+            <li><a href="./why-us.html" class="block px-4 py-2 hover:bg-gray-100">Why Us?</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="nav-link flex items-center px-3 py-2 hover:bg-amber-100 rounded-md">Products</a>
+        <div
+          class="absolute top-full left-0 mt-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-40">
+          <ul class="min-w-[220px] py-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Strawberry Bliss</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mango Tango</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Blueberry Burst</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Raspberry Rush</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sunny Marmalade</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="nav-link flex items-center px-3 py-2 hover:bg-amber-100 rounded-md">Recipes</a>
+        <div
+          class="absolute top-full left-0 mt-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-40">
+          <ul class="min-w-[240px] py-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Jam-filled Thumbprint Cookies</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Chia Seed Pudding with Jam</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <a href="#" class="nav-link flex px-3 py-2 hover:bg-amber-100 rounded-md">Locations</a>
+      </li>
+
+      <li class="relative group">
+        <a href="#" class="nav-link flex items-center px-3 py-2 hover:bg-amber-100 rounded-md">Support</a>
+        <div
+          class="absolute top-full left-0 mt-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-40">
+          <ul class="min-w-[160px] py-2">
+            <li><a href="./contact-us.html" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a></li>
+            <li><a href="./faq.html" class="block px-4 py-2 hover:bg-gray-100">FAQ</a></li>
+          </ul>
+        </div>
+      </li>
     </ul>
   </nav>
 </header>
