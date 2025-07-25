@@ -11,9 +11,9 @@ Website frontend for Web Multimedia module
 
 ### Secondary
 - Add artwork to main page
+- Panoramic view
 
 ### Optional
 - Rework header styling
 - 3D Model view on product page
-- Panoramic view
 
