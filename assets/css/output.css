@@ -58,6 +58,7 @@
     --color-accent: #9c1c19;
     --color-accent-hover: #e82925;
     --color-btn-bg: #9c1c19;
+    --color-faqred: #E91E63;
   }
 }
 @layer base {
@@ -454,8 +455,27 @@
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
+<<<<<<< HEAD
   .bg-lightblue {
     background-color: var(--color-lightblue);
+=======
+<<<<<<< HEAD
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+=======
+  .bg-bg {
+    background-color: var(--color-bg);
+>>>>>>> 1a19699f759063e03b8be702f4a4b26a70b48fcd
+  }
+  .bg-faqred {
+    background-color: var(--color-faqred);
+  }
+  .bg-header {
+    background-color: var(--color-header);
+>>>>>>> 83b159b515fe1a65268842fa187a0d244fdf5fe4
   }
   .bg-lightyellow {
     background-color: var(--color-lightyellow);

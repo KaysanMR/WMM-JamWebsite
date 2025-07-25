@@ -17,8 +17,8 @@
       <p class="text-center text-lg mb-12 font-patrick">Let’s answer your questions!</p>
   
       <!-- Section 1 -->
-      <section class="mb-12 bg-accent-hover p-6 rounded-lg">
-        <h2 class="text-xl mb-4">GENERAL SPREAD QUESTIONS</h2>
+      <section class="mb-12 bg-accent p-6 rounded-lg">
+        <h2 class="text-xl mb-4 font-sourgummy">GENERAL SPREAD QUESTIONS</h2>
         <div class="space-y-4">
           <details class="faq-item bg-white p-4 rounded shadow">
             <summary class="cursor-pointer flex justify-between items-center">
@@ -45,8 +45,8 @@
       </section>
   
       <!-- Section 2 -->
-      <section class="mb-12 bg-[#bae0ed] p-6 rounded-lg">
-        <h2 class="text-xl mb-4">WHAT’S IN THE SPREADS</h2>
+      <section class="mb-12 bg-accent p-6 rounded-lg">
+        <h2 class="text-xl mb-4 font-sourgummy">WHAT’S IN THE SPREADS</h2>
         <div class="space-y-4">
           <details class="faq-item bg-white p-4 rounded shadow">
             <summary class="cursor-pointer flex justify-between items-center">
@@ -80,14 +80,13 @@
       </section>
     </main>
   
-    <!-- JS to toggle + and - -->
+    <!-- JS to toggle plus and minus sign -->
     <script>
       document.querySelectorAll('.faq-item').forEach((item) => {
         const summary = item.querySelector('summary');
         const icon = item.querySelector('.toggle-icon');
   
         summary.addEventListener('click', () => {
-          // Close all other items if needed (accordion behavior — optional)
           setTimeout(() => {
             if (item.open) {
               icon.textContent = '–';
