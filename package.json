@@ -4,7 +4,9 @@
   "description": "Website frontend for Web Multimedia module",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss -i src/input.css -o assets/css/output.css --watch"
+    "dev": "tailwindcss -i src/input.css -o assets/css/output.css --watch",
+    "tailwind:build": "tailwindcss -i src/input.css -o assets/css/output.css",
+    "build": "npm run tailwind:build"
   },
   "repository": {
     "type": "git",
