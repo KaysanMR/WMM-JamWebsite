@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +8,13 @@
     <script src="../assets/js/script.js" defer></script>
     <title>Products - Raspberry Rush</title>
 </head>
+
 <body class="bg-lightblue text-text">
     <!-- Section 1: Product Details -->
     <section class="relative w-full py-12 bg-cover bg-clip-border bg-no-repeat flex items-center justify-center px-4"
         style="background-image: url('../assets/images/bg-leaves.png');">
-        <div class="backdrop-blur-sm bg-white/70 p-6 rounded-lg flex flex-col md:flex-row max-w-3xl w-full shadow-lg relative overflow-visible">
+        <div
+            class="backdrop-blur-sm bg-white/70 p-6 rounded-lg flex flex-col md:flex-row max-w-3xl w-full shadow-lg relative overflow-visible">
             <div class="w-full md:w-1/2 flex justify-center items-center relative">
                 <img src="../assets/images/jams/raspberry.png" alt="Raspberry Rush Jam"
                     class="max-w-xs md:max-w-sm relative -my-12 md:-mt-24 drop-shadow-xl z-10 hover:scale-110 transition" />
@@ -20,7 +23,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col justify-between">
                     <h1 class="font-sourgummy text-3xl font-bold text-center">Raspberry Rush</h1>
                     <p class="product-description mt-4">
-                        Savor the tart and lively flavor of our Raspberry Rush jam, made from plump, juicy raspberries. Perfect for breakfast, baking, or a sweet snack!
+                        Savor the tart and lively flavor of our Raspberry Rush jam, made from plump, juicy raspberries.
+                        Perfect for breakfast, baking, or a sweet snack!
                     </p>
                     <a href="#" class="btn-primary mt-4 block text-center">Find this near you!</a>
                 </div>
@@ -34,7 +38,8 @@
         <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl z-10 relative">
             <h2 class="text-3xl font-sourgummy text-center mb-6">What's in it?</h2>
             <p class="text-lg mb-4">
-                🍇 Did you know? Raspberries are high in fiber and Vitamin C! Our Raspberry Rush jam delivers a tangy punch and natural nutrition.
+                🍇 Did you know? Raspberries are high in fiber and Vitamin C! Our Raspberry Rush jam delivers a tangy
+                punch and natural nutrition.
             </p>
             <table class="w-full text-left border border-gray-300 rounded-md overflow-hidden">
                 <thead class="bg-amber-100 text-amber-900">
@@ -102,7 +107,8 @@
 
                 <h3 class="text-xl font-bold mb-2 font-sourgummy">Ingredients</h3>
                 <p class="text-md leading-relaxed">
-                    Organic Raspberries, Organic Apple Juice Concentrate, Apple Pectin, Citric Acid, Ascorbic Acid (Vitamin C)
+                    Organic Raspberries, Organic Apple Juice Concentrate, Apple Pectin, Citric Acid, Ascorbic Acid
+                    (Vitamin C)
                 </p>
             </div>
 
@@ -116,21 +122,31 @@
     </section>
 
     <section class="flavor-section py-12 px-4 relative">
-        <!-- ...existing code... -->
+
+        <div class="absolute top-0 left-0 w-full overflow-hidden rotate-180 leading-none z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+                class="w-full h-24">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="fill-lightblue" />
+            </svg>
+        </div>
+        
         <div class="mt-16 max-w-screen-lg mx-auto">
             <h2 class="font-sourgummy text-center font-bold text-4xl mb-12">Your tastebuds will also like:</h2>
             <div class="flavor-carousel flex justify-center gap-8">
-                <div class="flavor-item">
+                <a href="strawberry.html" class="flavor-item">
                     <img src="../assets/images/jams/strawberry.png" alt="Strawberry Bliss" class="flavor-image" />
-                </div>
-                <div class="flavor-item">
+                </a>
+                <a href="mango.html" class="flavor-item">
                     <img src="../assets/images/jams/mango.png" alt="Mango Madness" class="flavor-image" />
-                </div>
-                <div class="flavor-item">
+                </a>
+                <a href="blueberry.html" class="flavor-item">
                     <img src="../assets/images/jams/blueberry.png" alt="Blueberry Burst" class="flavor-image" />
-                </div>
+                </a>
             </div>
         </div>
     </section>
 </body>
+
 </html>
