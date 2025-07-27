@@ -2,7 +2,7 @@
 //add header
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("/components/header.html");
+    const response = await fetch("components/header.html");
     if (!response.ok) throw new Error("Header file not found");
     const headerHTML = await response.text();
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 //add footer
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("/components/footer.html");
+    const response = await fetch("components/footer.html");
     if (!response.ok) throw new Error("Footer file not found");
     const footerHTML = await response.text();
 
