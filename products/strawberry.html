@@ -12,7 +12,7 @@
 <body class="bg-lightblue text-text">
 
     <!-- Section 1: Product Details -->
-    <section class="w-full py-12 bg-cover bg-clip-border bg-no-repeat flex items-center justify-center px-4"
+    <section class="relative w-full py-12 bg-cover bg-clip-border bg-no-repeat flex items-center justify-center px-4"
         style="background-image: url('/assets/images/bg-leaves.png');">
         <div
             class="backdrop-blur-sm bg-white/70 p-6 rounded-lg flex flex-col md:flex-row max-w-3xl w-full shadow-lg relative overflow-visible">
@@ -91,7 +91,7 @@
     </section>
 
 
-    <section class="bg-lightblue relative py-32 px-6 ">
+    <section class="bg-lightblue relative py-12 px-6 ">
         <!-- Shape Divider Top -->
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-none z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -103,7 +103,7 @@
             </svg>
         </div>
 
-        <div class="max-w-screen-lg mx-auto grid md:grid-cols-2 items-center gap-16">
+        <div class="mt-12 -mb-12 max-w-screen-lg mx-auto grid md:grid-cols-2 items-center gap-16">
             <!-- Text Content -->
             <div>
                 <h2 class="text-3xl md:text-4xl font-sourgummy font-bold mb-6">What’s in Our Jar?</h2>
@@ -129,20 +129,20 @@
             </div>
         </div>
 
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+    </section>
+
+    <section class="flavor-section py-12 px-4 relative">
+
+        <div class="absolute top-0 left-0 w-full overflow-hidden rotate-180 leading-none z-10">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
                 class="w-full h-24">
                 <path
                     d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="fill-lightyellow"/>
+                    class="fill-lightblue"/>
             </svg>
         </div>
 
-    </section>
-
-    <section class="flavor-section py-20 px-4 relative">
-
-        <div class="max-w-screen-lg mx-auto">
+        <div class="mt-16 max-w-screen-lg mx-auto">
             <h2 class="font-sourgummy text-center font-bold text-4xl mb-12">Your tastebuds will also like:</h2>
             <div class="flavor-carousel flex justify-center gap-8">
                 <div class="flavor-item">
