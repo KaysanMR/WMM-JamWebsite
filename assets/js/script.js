@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const basePath = window.location.pathname.split("/")[1] ? `/${window.location.pathname.split("/")[1]}` : "";
+  if (location.protocol === "file:") {
+    console.warn("Components may not load properly using file:// URLs. Use a local server for best results.");
+    return;
+  }
 
   async function loadComponent(file, tag) {
     try {
-      const response = await fetch(`${basePath}/components/${file}.html`);
+      const response = await fetch(`./components/${file}.html`);
       if (!response.ok) throw new Error(`${file}.html not found`);
 
       const html = await response.text();
@@ -11,7 +14,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       tempDiv.innerHTML = html;
 
       const element = tempDiv.querySelector(tag);
-      if (!element) return console.warn(`No <${tag}> tag found in ${file}.html`);
+      if (!element) {
+        console.warn(`No <${tag}> tag found in ${file}.html`);
+        return;
+      }
 
       if (tag === "header") {
         document.body.prepend(element);
