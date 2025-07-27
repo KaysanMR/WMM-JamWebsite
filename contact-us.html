@@ -14,37 +14,40 @@
 <body>
     <section class="bg-bg text-text py-16 px-6">
         <div class="max-w-6xl mx-auto">
-            <h1 class="font-sourgummy text-3xl text-center mb-8">Contact Us</h1>
-            <h4 class="text-center mb-15">Got questions, feedback, or just want to say hi? We’d love to hear from you!</h4>
+            <h1 class="text-5xl text-center mb-6">CONTACT US</h1>
+            <p class="text-center text-xl mb-16 font-patrick">Got questions, feedback, or just want to say hi? We’d love to hear from you!</p>
 
-            <div class="flex flex-col md:flex-row gap-8 justify-center">
+            <div class="text-lg flex flex-col md:flex-row gap-8 justify-center mb-12">
+
+                <!-- Message Form -->
                 <div class="w-full md:w-[800px] bg-white border border-gray-200 p-8 rounded-lg shadow">
                     <form class="space-y-6">
                         <div>
-                            <label for="name" class="block font-medium mb-2">Your Name</label>
+                            <label for="name" class="block font-medium font-sourgummy mb-2">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="Jam Doe"
                                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary" />
                         </div>
 
                         <div>
-                            <label for="email" class="block font-medium mb-2">Email Address</label>
+                            <label for="email" class="block font-medium font-sourgummy mb-2">Email Address</label>
                             <input type="email" id="email" name="email" placeholder="you@ilovejam.com"
                                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary" />
                         </div>
 
                         <div>
-                            <label for="message" class="block font-medium mb-2">Your Message</label>
+                            <label for="message" class="block font-medium font-sourgummy mb-2">Your Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
                                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
                         </div>
 
                         <button type="submit"
-                            class="btn-primary">
+                            class="btn-primary font-sourgummy text-base">
                             Send Message
                         </button>
                     </form>
                 </div>
 
+                <!-- Google Map -->
                 <div class="w-full md:w-[800px] bg-white border border-gray-200 rounded-lg shadow">
                     <div class="h-full w-full rounded-lg overflow-hidden shadow flex flex-col">
                     <iframe
@@ -56,6 +59,39 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Details -->
+    <section class="pt-12 pb-24 flex flex-col items-center gap-20 bg-white text-text">
+        <h2 class="font-sourgummy text-4xl font-bold text-center mb-8">GET IN TOUCH</h2>
+        
+        <div class="relative w-full flex justify-center">
+            <div class="absolute top-[9%] w-full h-48 bg-accent z-0"></div>
+
+                <div class="relative z-10 -mt-12 grid grid-cols-1 md:grid-cols-3 gap-28 max-w-6xl px-4">
+                    <div class="flex flex-col items-center text-center text-white">
+                        <img src="/assets/images/contact-icons/phone.png" alt="Phone Icon"
+                         class="w-30 h-30 object-cover rounded-full shadow-md mb-6" />
+                        <p class="text-xl font-sourgummy font-bold mb-2">Phone</p>
+                        <p class="text-base font-patrick">+60 123-456-789</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center text-white">
+                        <img src="/assets/images/contact-icons/email.png" alt="Email Icon"
+                         class="w-30 h-30 object-cover rounded-full shadow-md mb-6" />
+                        <p class="text-xl font-sourgummy font-bold mb-2">Email</p>
+                        <p class="text-base font-patrick">hello@naturesjam.com</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center text-white">
+                        <img src="/assets/images/contact-icons/social.png" alt="Social Icon"
+                         class="w-30 h-30 object-cover rounded-full shadow-md mb-6" />
+                        <p class="text-xl font-sourgummy font-bold mb-2">Social</p>
+                        <p class="text-base font-patrick">@naturesjam</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
     </section>
 </body>
 
