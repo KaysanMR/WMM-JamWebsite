@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/output.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/output.css" />
     <script src="/assets/js/script.js" defer></script>
     <title>Products - Strawberry Bliss</title>
 </head>
-<body class="bg-lightblue text-text">
-    <section class="product my-12">
-        <div class="h-100 flex justify-center product-details">
-            <div class="product-image-container w-100">
-                <img src="/assets/images/jams/strawberry.png" alt="Strawberry Bliss Jam" class="product-image">
-            </div>
-            <div class="card product-description-container w-100 ml-8">
-                <h1 class="font-sourgummy text-3xl font-bold text-center">Strawberry Bliss</h1>
-                <p class="product-description">Indulge in the sweet and tangy flavor of our Strawberry Bliss jam, made from the freshest strawberries picked at the peak of ripeness. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet in dolores amet laborum, explicabo esse ipsum, sunt aperiam necessitatibus deleniti possimus fugit consectetur exercitationem minus, vel beatae iure aspernatur!</p>
 
-                <a href="#" class="btn-primary mt-4 items-end">Find this near you!</a>
+<body class="bg-lightblue text-text">
+
+    <!-- Section 1: Product Details -->
+    <section class="w-full py-12 bg-cover bg-clip-border bg-no-repeat flex items-center justify-center px-4"
+        style="background-image: url('/assets/images/bg-leaves.png');">
+        <div
+            class="backdrop-blur-sm bg-white/70 p-6 rounded-lg flex flex-col md:flex-row max-w-3xl w-full shadow-lg relative overflow-visible">
+            <!-- Product Image -->
+            <div class="w-full md:w-1/2 flex justify-center items-center relative">
+                <img src="/assets/images/jams/strawberry.png" alt="Strawberry Bliss Jam"
+                    class="max-w-xs md:max-w-sm relative -my-12 md:-mt-24 drop-shadow-xl z-10 hover:scale-110 transition" />
+            </div>
+
+            <!-- Product Description -->
+            <div class="w-full md:w-1/2 mt-6 md:mt-0 md:ml-8">
+                <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col justify-between">
+                    <h1 class="font-sourgummy text-3xl font-bold text-center">Strawberry Bliss</h1>
+                    <p class="product-description mt-4">
+                        Indulge in the sweet and tangy flavor of our Strawberry Bliss jam, made from the freshest
+                        strawberries
+                        picked at the peak of ripeness. Bursting with natural goodness and sunshine, it's your perfect
+                        morning
+                        companion.
+                    </p>
+                    <a href="#" class="btn-primary mt-4 block text-center">Find this near you!</a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="product-nutri-info bg-lightyellow h-100">
-        <h1>What's in it?</h1>
+
+
+    <!-- Section 2: Nutrition Information -->
+    <section class="product-nutri-info py-16 bg-lightyellow">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
+            <h2 class="text-3xl font-sourgummy text-center mb-6">What's in it?</h2>
+
+            <p class="text-lg mb-4">
+                🍓 Did you know? Strawberries are naturally rich in Vitamin C and antioxidants! Our Strawberry Bliss jam
+                retains
+                that fruity punch with just the right amount of sweetness.
+            </p>
+
+            <table class="w-full text-left border border-gray-300 rounded-md overflow-hidden">
+                <thead class="bg-amber-100 text-amber-900">
+                    <tr>
+                        <th class="py-2 px-4 border-b">Nutrient</th>
+                        <th class="py-2 px-4 border-b">Amount per 100g</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-2 px-4 border-b">Calories</td>
+                        <td class="py-2 px-4 border-b">240 kcal</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-2 px-4 border-b">Total Sugars</td>
+                        <td class="py-2 px-4 border-b">38g</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-2 px-4 border-b">Vitamin C</td>
+                        <td class="py-2 px-4 border-b">15mg</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-2 px-4 border-b">Carbohydrates</td>
+                        <td class="py-2 px-4 border-b">40g</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-2 px-4 border-b">Fat</td>
+                        <td class="py-2 px-4 border-b">0g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
+
 </body>
+
 </html>
