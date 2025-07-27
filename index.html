@@ -27,23 +27,54 @@
   </section>
 
   <section class="flavor-section">
-    <h2 class="font-sourgummy text-center font-bold text-4xl">OUR FLAVORS</h2>
-    <div class="mt-12 flavor-carousel">
-    <div class="flavor-item">
-      <img src="./assets/images/jams/strawberry.png" alt="Strawberry Bliss" class="flavor-image" />
-    </div>
-    <div class="flavor-item">
-      <img src="./assets/images/jams/mango.png" alt="Mango Madness" class="flavor-image" />
-    </div>
-    <div class="flavor-item">
-      <img src="./assets/images/jams/blueberry.png" alt="Blueberry Burst" class="flavor-image" />
-    </div>
-    <div class="flavor-item">
-      <img src="./assets/images/jams/raspberry.png" alt="Raspberry Rush" class="flavor-image" />
-    </div>
-    <div class="flavor-item">
-      <img src="./assets/images/jams/marmalade.png" alt="Sunny Marmalade" class="flavor-image" />
-    </div>
+    <h2 class="flavor-title">OUR FLAVORS</h2>
+    <div class="flavor-carousel">
+
+      <div class="flavor-card">
+        <a href="./products/strawberry.html" class="group">
+          <img src="./assets/images/jams/strawberry.png" alt="Strawberry Bliss" class="flavor-image" />
+          <div class="flavor-hover-label">
+            <span class="flavor-label-text">Strawberry Bliss</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="flavor-card">
+        <a href="./products/mango.html" class="group">
+          <img src="./assets/images/jams/mango.png" alt="Mango Madness" class="flavor-image" />
+          <div class="flavor-hover-label">
+            <span class="flavor-label-text">Mango Madness</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="flavor-card">
+        <a href="./products/blueberry.html" class="group">
+          <img src="./assets/images/jams/blueberry.png" alt="Blueberry Burst" class="flavor-image" />
+          <div class="flavor-hover-label">
+            <span class="flavor-label-text">Blueberry Burst</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="flavor-card">
+        <a href="./products/raspberry.html" class="group">
+          <img src="./assets/images/jams/raspberry.png" alt="Raspberry Rush" class="flavor-image" />
+          <div class="flavor-hover-label">
+            <span class="flavor-label-text">Raspberry Rush</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="flavor-card">
+        <a href="./products/marmalade.html" class="group">
+          <img src="./assets/images/jams/marmalade.png" alt="Sunny Marmalade" class="flavor-image" />
+          <div class="flavor-hover-label">
+            <span class="flavor-label-text">Sunny Marmalade</span>
+          </div>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -89,13 +120,37 @@
       said.
       Did we mention there’s more?
     </p>
-
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl px-6">
-      <a href="./recipes/cookie-spread.html" class="block">
-        <img src="./assets/images/recipes/cookie.png" alt="Cookie Spread Recipe" class="w-full rounded-xl shadow-md" />
+      <!-- Recipe 1 -->
+      <a href="./recipes/jam-thumbprint-cookies.html" class="relative group block overflow-hidden rounded-xl shadow-md">
+        <img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2021/11/Thumbprint-Cookies938212.jpg"
+          alt="Jam Thumbprint Cookie Recipe"
+          class="w-full h-100 object-cover transition duration-300 group-hover:scale-105" />
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+
+        <!-- Title Text -->
+        <h1
+          class="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold font-sourgummy opacity-0 group-hover:opacity-100 transition duration-300 text-center px-4">
+          Jam Thumbprint Cookies
+        </h1>
       </a>
-      <a href="./recipes/oatmeal-bars.html" class="block">
-        <img src="./assets/images/recipes/oatmeal.png" alt="Oatmeal Bars Recipe" class="w-full rounded-xl shadow-md" />
+
+      <!-- Recipe 2 -->
+      <a href="./recipes/chia-seed-pudding-with-jam.html"
+        class="relative group block overflow-hidden rounded-xl shadow-md">
+        <img
+          src="https://www.realsimple.com/thmb/smO0Gfq366BqXHXPw8PRG6IuN_Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/strawberry-chia-breakfast-pudding-recipe-0722BFY-2000-60feeb133685463a89e0776857d46c86.jpg"
+          alt="Chia Seed Pudding with Jam Recipe"
+          class="w-full h-100 object-cover transition duration-300 group-hover:scale-105" />
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+
+        <h1
+          class="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold font-sourgummy opacity-0 group-hover:opacity-100 transition duration-300 text-center px-4">
+          Chia Seed Pudding with Jam
+        </h1>
       </a>
     </div>
   </section>

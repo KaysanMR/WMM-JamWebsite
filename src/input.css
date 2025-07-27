@@ -69,22 +69,32 @@
     @apply py-12 bg-lightyellow text-text;
   }
 
-  /* Carousel container */
-  .flavor-carousel {
-    @apply flex justify-around px-4 md:px-12;
-    scroll-snap-type: x mandatory;
+
+  /* flavor section items */
+  .flavor-card {
+    @apply relative overflow-hidden rounded-xl h-60;
   }
 
-  /* Each jam flavor */
-  .flavor-item {
-    @apply flex flex-col items-center shrink-0;
-    scroll-snap-align: center;
-  }
-
-  /* Jam image */
   .flavor-image {
-    @apply w-60 h-60 md:w-70 md:h-70 object-contain hover:scale-110 transition-transform duration-150 ease-in-out ;
+    @apply w-full h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50;
   }
+
+  .flavor-hover-label {
+    @apply absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300;
+  }
+
+  .flavor-label-text {
+    @apply text-white text-sm font-bold font-sourgummy text-center px-2;
+  }
+
+  .flavor-carousel {
+    @apply mt-12 flex flex-wrap justify-center gap-4;
+  }
+
+  .flavor-title {
+    @apply font-sourgummy text-center font-bold text-4xl;
+  }
+
 
 
   .story-section {
