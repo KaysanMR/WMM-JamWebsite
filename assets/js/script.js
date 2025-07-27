@@ -1,34 +1,40 @@
+//add header
 document.addEventListener("DOMContentLoaded", async () => {
-  if (location.protocol === "file:") {
-    console.warn("Components may not load properly using file:// URLs. Use a local server for best results.");
-    return;
-  }
+  try {
+    const response = await fetch("/components/header.html");
+    if (!response.ok) throw new Error("Header file not found");
+    const headerHTML = await response.text();
 
-  async function loadComponent(file, tag) {
-    try {
-      const response = await fetch(`./components/${file}.html`);
-      if (!response.ok) throw new Error(`${file}.html not found`);
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = headerHTML;
+    const header = tempDiv.querySelector("header");
 
-      const html = await response.text();
-      const tempDiv = document.createElement("div");
-      tempDiv.innerHTML = html;
-
-      const element = tempDiv.querySelector(tag);
-      if (!element) {
-        console.warn(`No <${tag}> tag found in ${file}.html`);
-        return;
-      }
-
-      if (tag === "header") {
-        document.body.prepend(element);
-      } else if (tag === "footer") {
-        document.body.appendChild(element);
-      }
-    } catch (err) {
-      console.error(`Failed to load ${file}:`, err);
+    if (header) {
+      document.body.prepend(header);
+    } else {
+      console.warn("No <header> tag found in header.html");
     }
+  } catch (err) {
+    console.error("Failed to load header:", err);
   }
+});
+//add footer
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("/components/footer.html");
+    if (!response.ok) throw new Error("Footer file not found");
+    const footerHTML = await response.text();
 
-  await loadComponent("header", "header");
-  await loadComponent("footer", "footer");
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = footerHTML;
+    const footer = tempDiv.querySelector("footer");
+
+    if (footer) {
+      document.body.appendChild(footer);
+    } else {
+      console.warn("No <footer> tag found in footer.html");
+    }
+  } catch (err) {
+    console.error("Failed to load footer:", err);
+  }
 });
