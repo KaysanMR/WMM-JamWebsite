@@ -47,7 +47,7 @@
   }
 
   .hero-heading {
-    @apply text-4xl font-sourgummy mb-4;
+    @apply text-text-light text-4xl font-sourgummy mb-4;
   }
 
   .hero-text {
