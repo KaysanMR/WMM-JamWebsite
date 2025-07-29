@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-    base: '/WMM-JamWebsite/', // <-- Replace with your actual repo name
+    base: '/WMM-JamWebsite/',
     build: {
         rollupOptions: {
             input: {
