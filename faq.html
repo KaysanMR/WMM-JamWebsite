@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature's Jam - FAQ</title>
+  <script type="module" crossorigin src="/WMM-JamWebsite/assets/main-hubDU8UN.js"></script>
+  <link rel="stylesheet" crossorigin href="/WMM-JamWebsite/assets/main-C1IcCqOd.css">
+</head>
+
+<body class="bg-lightyellow">
+  
+  <main class="py-12 px-4 md:px-16">
+    <h1 class="text-5xl text-center mb-6">FAQ'S</h1>
+    <p class="text-center text-xl mb-16 font-patrick">Let’s answer your questions!</p>
+
+    <!-- first section -->
+    <section class="mb-12 bg-accent p-6 rounded-lg">
+      <h2 class="text-xl mb-4 font-sourgummy text-white">GENERAL SPREAD QUESTIONS</h2>
+      <div class="space-y-4">
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            WHERE CAN I BUY NATURE’S JAM?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">Nature's Jam is waiting for you in many major retailers across Malaysia. To find the nearest one, please visit our store locator.</p>
+        </details>
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            DO I REFRIGERATE THE JAM?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">Yes, once opened, it’s best to refrigerate to maintain freshness.</p>
+        </details>
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            WHY IS THERE SOME LIQUID ON TOP OF THE JAM?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">That’s natural fruit juice separating. Just give it a stir! You are welcome to remove it too, but it’s a natural occurrence in a spread that has lesser sugar than a traditional preserve and far more fruit.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- second section -->
+    <section class="mb-12 bg-accent p-6 rounded-lg">
+      <h2 class="text-xl mb-4 font-sourgummy text-white">WHAT’S IN THE SPREADS</h2>
+      <div class="space-y-4">
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            ARE THE JAMS VEGAN/VEGETARIAN?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">Yes! Our fruit spreads meet all categories of vegetarian including vegan. We use no animal ingredients of any kind, and our organic cane sugar is produced without the use of bone-char. Enjoy!</p>
+        </details>
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            ARE YOUR SPREADS NUT-FREE?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">Absolutely, we do not include any nuts in our spreads.</p>
+        </details>
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            DO YOUR PRODUCTS CONTAIN ANY ALLERGENS?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">We do not purchase ingredients that may contain allergens. We avoid major allergens but always check the label for specific ingredients for your information.</p>
+        </details>
+        <details class="faq-item bg-white p-4 rounded shadow group hover:bg-gray-100 transition-all transform hover:translate-x-1 duration-200">
+          <summary class="cursor-pointer flex justify-between items-center">
+            DO YOUR SPREADS CONTAIN GLUTEN?
+            <span class="toggle-icon text-xl font-bold group-hover:text-accent-hover transition-colors">+</span>
+          </summary>
+          <p class="mt-2 font-patrick">No, all of our spreads are gluten-free and safe for celiac-friendly diets.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- js for plus and minus sign -->
+  <script>
+    document.querySelectorAll('.faq-item').forEach((item) => {
+      const summary = item.querySelector('summary');
+      const icon = item.querySelector('.toggle-icon');
+
+      summary.addEventListener('click', () => {
+        setTimeout(() => {
+          if (item.open) {
+            icon.textContent = '–';
+          } else {
+            icon.textContent = '+';
+          }
+        }, 50);
+      });
+    });
+  </script>
+</body>
+</html>
