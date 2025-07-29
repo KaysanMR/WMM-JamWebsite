@@ -1,4 +1,4 @@
-import './style.css'; 
+import './input.css'; 
 //add header
 document.addEventListener("DOMContentLoaded", async () => {
   try {
